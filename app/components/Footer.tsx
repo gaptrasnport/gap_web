@@ -48,10 +48,10 @@ export default function Footer() {
 
                     {/* Column 2 */}
                     <div className="flex flex-col space-y-1">
-                        <Link href="#" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors">Safety</Link>
-                        <Link href="#" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors">Compliance</Link>
-                        <Link href="#" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors">Service</Link>
-                        <Link href="#" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors whitespace-nowrap">Profitability & Sustainability</Link>
+                        <Link href="/safety" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors">Safety</Link>
+                        <Link href="/compliance" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors">Compliance</Link>
+                        <Link href="/service" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors">Service</Link>
+                        <Link href="/profitability-sustainability" className="font-rubik font-bold text-lg md:text-xl text-white hover:text-gray-300 transition-colors whitespace-nowrap">Profitability & Sustainability</Link>
                     </div>
 
                     {/* Column 3: Contact & Socials */}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OperatingPillars() {
     const pillars = [
@@ -52,31 +53,70 @@ export default function OperatingPillars() {
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
-                    {pillars.map((pillar, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-col items-start text-left group"
-                        >
-                            {/* Icon Container - Border removed */}
-                            <div className="mb-6 flex items-start justify-start w-48 h-48 md:w-56 md:h-56 transition-transform group-hover:scale-105">
-                                <div className="relative w-full h-full">
-                                    <Image
-                                        src={pillar.icon}
-                                        alt={pillar.alt}
-                                        fill
-                                        className="object-contain object-left"
-                                    />
+                    {pillars.map((pillar, index) => {
+                        const Content = (
+                            <div
+                                className="flex flex-col items-start text-left group cursor-pointer"
+                            >
+                                {/* Icon Container - Border removed */}
+                                <div className="mb-6 flex items-start justify-start w-48 h-48 md:w-56 md:h-56 transition-transform group-hover:scale-105">
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={pillar.icon}
+                                            alt={pillar.alt}
+                                            fill
+                                            className="object-contain object-left"
+                                        />
+                                    </div>
                                 </div>
-                            </div>
 
-                            <h3 className="text-2xl font-rubik font-black text-white mb-1 leading-tight tracking-wide">
-                                {pillar.title}
-                            </h3>
-                            <p className="text-base font-rubik font-normal text-white/90">
-                                {pillar.subtitle}
-                            </p>
-                        </div>
-                    ))}
+                                <h3 className="text-2xl font-rubik font-black text-white mb-1 leading-tight tracking-wide">
+                                    {pillar.title}
+                                </h3>
+                                <p className="text-base font-rubik font-normal text-white/90">
+                                    {pillar.subtitle}
+                                </p>
+                            </div>
+                        );
+
+                        if (pillar.title === "Safety") {
+                            return (
+                                <Link href="/safety" key={index} className="block">
+                                    {Content}
+                                </Link>
+                            )
+                        }
+
+                        if (pillar.title === "Compliance") {
+                            return (
+                                <Link href="/compliance" key={index} className="block">
+                                    {Content}
+                                </Link>
+                            )
+                        }
+
+                        if (pillar.title === "Service") {
+                            return (
+                                <Link href="/service" key={index} className="block">
+                                    {Content}
+                                </Link>
+                            )
+                        }
+
+                        if (pillar.title === "Profitability & Sustainability") {
+                            return (
+                                <Link href="/profitability-sustainability" key={index} className="block">
+                                    {Content}
+                                </Link>
+                            )
+                        }
+
+                        return (
+                            <div key={index}>
+                                {Content}
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>
