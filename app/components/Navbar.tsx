@@ -33,7 +33,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="hover:text-yellow-400 transition-colors uppercase">
+                        <Link href="/safety-resources" className="hover:text-yellow-400 transition-colors uppercase">
                             Safety Resources
                         </Link>
                     </li>
