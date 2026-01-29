@@ -13,34 +13,20 @@ export default function Footer() {
             </div>
 
             <div className="relative z-10 container mx-auto px-6 py-16">
-
-                {/* Top Section: Logo & Top Nav */}
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
-                    <div className="text-2xl md:text-3xl italic tracking-wide mb-8 md:mb-0">
-                        <span className="font-bold font-rubik">GAP</span> <span className="font-rubik font-normal">Transportation Services Inc.</span>
-                    </div>
-
-                    <nav className="flex space-x-8 text-sm font-medium tracking-wider uppercase">
-                        <Link href="#" className="hover:text-yellow-400 transition-colors">About</Link>
-                        <Link href="#" className="hover:text-yellow-400 transition-colors">Careers</Link>
-                        <Link href="#" className="hover:text-yellow-400 transition-colors">Safety Resources</Link>
-                    </nav>
-                </div>
-
                 {/* Main Content Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
 
                     {/* Column 1: Navigation Repeated (or Context specific) */}
-                    <div className="flex flex-col space-y-3 font-rubik font-bold">
-                        <Link href="#" className="hover:text-gray-300 transition-colors">About</Link>
-                        <Link href="#" className="hover:text-gray-300 transition-colors">Careers</Link>
-                        <Link href="#" className="hover:text-gray-300 transition-colors">Safety Resources</Link>
-                    </div>
+                    <nav className="flex space-x-8 text-sm font-medium tracking-wider uppercase">
+                        <Link href="/about" className="hover:text-yellow-400 transition-colors">About</Link>
+                        <Link href="#" className="hover:text-yellow-400 transition-colors">Careers</Link>
+                        <Link href="#" className="hover:text-yellow-400 transition-colors">Safety Resources</Link>
+                    </nav>
 
                     {/* Column 2: Pillars Links */}
                     <div className="flex flex-col space-y-3 font-rubik font-bold">
-                        <Link href="#" className="hover:text-gray-300 transition-colors">Safety</Link>
-                        <Link href="#" className="hover:text-gray-300 transition-colors">Compliance</Link>
+                        <Link href="/about" className="hover:text-gray-300 transition-colors">About</Link>
+                        <Link href="#" className="hover:text-gray-300 transition-colors">Careers</Link>
                         <Link href="#" className="hover:text-gray-300 transition-colors">Service</Link>
                         <Link href="#" className="hover:text-gray-300 transition-colors">Profitability & Sustainability</Link>
                     </div>
