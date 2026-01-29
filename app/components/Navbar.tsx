@@ -8,8 +8,8 @@ export default function Navbar({ transparent = false }: NavbarProps) {
     return (
         <header
             className={`fixed top-0 left-0 w-full z-50 flex flex-col md:flex-row justify-between items-center px-6 py-6 md:py-8 transition-colors ${transparent
-                    ? "bg-gradient-to-b from-blue-900/50 to-transparent"
-                    : "bg-blue-900 shadow-md"
+                ? "bg-gradient-to-b from-blue-900/50 to-transparent"
+                : "bg-blue-900 shadow-md"
                 }`}
         >
             {/* Logo Text */}
@@ -28,7 +28,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="hover:text-yellow-400 transition-colors uppercase">
+                        <Link href="/careers" className="hover:text-yellow-400 transition-colors uppercase">
                             Careers
                         </Link>
                     </li>

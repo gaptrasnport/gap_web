@@ -19,14 +19,14 @@ export default function Footer() {
                     {/* Column 1: Navigation Repeated (or Context specific) */}
                     <nav className="flex space-x-8 text-sm font-medium tracking-wider uppercase">
                         <Link href="/about" className="hover:text-yellow-400 transition-colors">About</Link>
-                        <Link href="#" className="hover:text-yellow-400 transition-colors">Careers</Link>
+                        <Link href="/careers" className="hover:text-yellow-400 transition-colors">Careers</Link>
                         <Link href="#" className="hover:text-yellow-400 transition-colors">Safety Resources</Link>
                     </nav>
 
                     {/* Column 2: Pillars Links */}
                     <div className="flex flex-col space-y-3 font-rubik font-bold">
                         <Link href="/about" className="hover:text-gray-300 transition-colors">About</Link>
-                        <Link href="#" className="hover:text-gray-300 transition-colors">Careers</Link>
+                        <Link href="/careers" className="hover:text-gray-300 transition-colors">Careers</Link>
                         <Link href="#" className="hover:text-gray-300 transition-colors">Service</Link>
                         <Link href="#" className="hover:text-gray-300 transition-colors">Profitability & Sustainability</Link>
                     </div>
