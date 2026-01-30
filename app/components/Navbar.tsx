@@ -56,7 +56,9 @@ export default function Navbar({ transparent = false }: NavbarProps) {
                 {/* Logo Text */}
                 <div className="text-2xl md:text-4xl italic tracking-wide text-white pr-12 md:pr-0">
                     <Link href="/">
-                        <span className="font-black font-rubik" style={{ WebkitTextStroke: "2.5px white" }}>GAP</span> <span className="font-bold font-rubik">Transportation Services Inc.</span>
+                        <span className="font-black font-rubik md:hidden" style={{ WebkitTextStroke: "2px white" }}>GAP</span>
+                        <span className="font-black font-rubik hidden md:inline" style={{ WebkitTextStroke: "2.5px white" }}>GAP</span>
+                        {" "}<span className="font-bold font-rubik">Transportation Services Inc.</span>
                     </Link>
                 </div>
 

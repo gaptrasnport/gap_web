@@ -13,7 +13,7 @@ export default function SafetySection() {
 
             {/* Content */}
             <div className="relative z-10 container mx-auto px-6">
-                <h2 className="text-6xl md:text-8xl lg:text-9xl font-holiday text-yellow-400 mb-6 drop-shadow-xl transform -rotate-2">
+                <h2 className="text-6xl md:text-8xl lg:text-9xl font-holiday text-yellow-400 mb-16 md:mb-10 drop-shadow-xl transform -rotate-2 leading-[1.2]">
                     #Safety Above All
                 </h2>
 
