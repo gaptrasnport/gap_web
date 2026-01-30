@@ -8,7 +8,7 @@ export default function Footer() {
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/footer-bg.jpg')" }}
             >
-                <div className="absolute inset-0 bg-blue-900/95 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />
             </div>
 
             <div className="relative z-10 container mx-auto px-6 py-16">

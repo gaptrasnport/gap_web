@@ -36,7 +36,7 @@ export default function OperatingPillars() {
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/hero-bg.jpg')" }}
             >
-                <div className="absolute inset-0 bg-blue-900/90 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />
             </div>
 
             {/* Content */}
