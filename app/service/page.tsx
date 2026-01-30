@@ -10,9 +10,9 @@ export default function ServicePage() {
             <div className="pt-32 pb-20 px-6 max-w-4xl mx-auto text-gray-800">
 
                 {/* Title */}
-                <div className="mb-8 mt-8 flex items-baseline gap-3">
-                    <h1 className="font-holiday text-6xl text-yellow-500">Service</h1>
-                    <span className="text-3xl text-yellow-400 italic font-light font-rubik">Operational Excellence</span>
+                <div className="mb-8 mt-8 flex flex-col md:flex-row md:items-baseline gap-2 md:gap-3">
+                    <h1 className="font-holiday text-5xl md:text-6xl text-yellow-500">Service</h1>
+                    <span className="text-2xl md:text-3xl text-yellow-400 italic font-light font-rubik">Operational Excellence</span>
                 </div>
 
                 {/* Subheader */}
