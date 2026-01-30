@@ -56,16 +56,16 @@ export default function OperatingPillars() {
                     {pillars.map((pillar, index) => {
                         const Content = (
                             <div
-                                className="flex flex-col items-start text-left group cursor-pointer"
+                                className="flex flex-col items-center text-center group cursor-pointer"
                             >
                                 {/* Icon Container - Border removed */}
-                                <div className="mb-6 flex items-start justify-start w-48 h-48 md:w-56 md:h-56 transition-transform group-hover:scale-105">
+                                <div className="mb-6 flex items-center justify-center w-48 h-48 md:w-56 md:h-56 transition-transform group-hover:scale-105">
                                     <div className="relative w-full h-full">
                                         <Image
                                             src={pillar.icon}
                                             alt={pillar.alt}
                                             fill
-                                            className="object-contain object-left"
+                                            className="object-contain object-center"
                                         />
                                     </div>
                                 </div>
