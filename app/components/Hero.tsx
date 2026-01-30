@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "./Navbar";
 
 export default function Hero() {
     return (
@@ -14,9 +13,6 @@ export default function Hero() {
 
             {/* Content Container */}
             <div className="relative z-10 container mx-auto px-6 py-8 h-full flex flex-col justify-between">
-
-                {/* Header / Navbar */}
-                <Navbar transparent={true} />
 
                 {/* Hero Content */}
                 <div className="flex flex-col justify-center items-start h-full mt-20">
