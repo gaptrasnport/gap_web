@@ -10,18 +10,18 @@ export default function Hero() {
         offset: ["start start", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+    const y = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
 
     return (
         <section
             ref={containerRef}
-            className="relative w-full h-screen text-white overflow-hidden flex items-center"
+            className="relative w-full h-screen text-white overflow-hidden flex items-center bg-[#0a192f]"
         >
             {/* Background Image with Parallax */}
             <motion.div
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute -top-[15%] -bottom-[15%] -left-0 -right-0 z-0 bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/hero-bg.jpg')",
                     y,

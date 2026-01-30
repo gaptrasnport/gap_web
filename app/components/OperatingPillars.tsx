@@ -122,16 +122,16 @@ export default function OperatingPillars() {
         offset: ["start end", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+    const y = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
 
     return (
         <section
             ref={containerRef}
-            className="relative w-full min-h-screen py-20 flex flex-col justify-center items-center font-sans text-white overflow-hidden perspective-1000"
+            className="relative w-full min-h-screen py-20 flex flex-col justify-center items-center font-sans text-white overflow-hidden perspective-1000 bg-[#0a192f]"
         >
             {/* Background Image with subtle parallax */}
             <motion.div
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute -top-[15%] -bottom-[15%] -left-0 -right-0 z-0 bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/hero-bg.jpg')",
                     y

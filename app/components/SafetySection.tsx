@@ -10,17 +10,17 @@ export default function SafetySection() {
         offset: ["start end", "end start"]
     });
 
-    const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.2, 1.3]);
-    const y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+    const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.1, 1.2]);
+    const y = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
 
     return (
         <section
             ref={sectionRef}
-            className="relative w-full min-h-screen flex flex-col justify-center items-center text-center font-sans text-white overflow-hidden"
+            className="relative w-full min-h-screen flex flex-col justify-center items-center text-center font-sans text-white overflow-hidden bg-black"
         >
             {/* Background Image with Ken Burns + Parallax */}
             <motion.div
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute -top-[15%] -bottom-[15%] -left-0 -right-0 z-0 bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/safety-bg.jpg')",
                     scale,

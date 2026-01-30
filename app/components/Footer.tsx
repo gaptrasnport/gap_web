@@ -1,15 +1,35 @@
+"use client";
+
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
 
 export default function Footer() {
+    const footerRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: footerRef,
+        offset: ["start end", "end start"]
+    });
+
+    const y = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+
     return (
-        <footer className="relative w-full min-h-screen flex flex-col justify-center text-white font-sans text-sm md:text-base">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 z-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/footer-bg.jpg')" }}
+        <footer
+            ref={footerRef}
+            className="relative w-full min-h-screen flex flex-col justify-center text-white font-sans text-sm md:text-base overflow-hidden bg-[#0a192f]"
+        >
+            {/* Background Image with Parallax */}
+            <motion.div
+                className="absolute -top-[15%] -bottom-[15%] -left-0 -right-0 z-0 bg-cover bg-center"
+                style={{
+                    backgroundImage: "url('/footer-bg.jpg')",
+                    y,
+                    scale
+                }}
             >
-                <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />
-            </div>
+                <div className="absolute inset-0 bg-blue-900/60 mix-blend-multiply" />
+            </motion.div>
 
             <div className="relative z-10 container mx-auto px-6 py-16">
                 {/* Top Row: Logo & Top Nav */}
