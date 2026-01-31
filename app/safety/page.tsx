@@ -56,7 +56,23 @@ export default function SafetyPage() {
                         <li>
                             Fitness-for-duty and fatigue awareness
                         </li>
+                        <li>
+                            Hydration and heat exposure mitigation
+                        </li>
+                        <li>
+                            Proper lifting techniques and ergonomics
+                        </li>
+                        <li>
+                            Mandatory three points of contact when entering and exiting vehicles
+                        </li>
+                        <li>
+                            Appropriate footwear and safe load handling procedures
+                        </li>
                     </ul>
+
+                    <p className="mt-8">
+                        Safety systems are designed not only to react to events but to <span className="font-bold text-gray-800">prevent them.</span>
+                    </p>
                 </div>
 
             </div>

@@ -11,7 +11,7 @@ export default function SafetyResources() {
             <div className="pt-32 pb-20 px-6 max-w-4xl mx-auto text-gray-800">
 
                 {/* Title */}
-                <h1 className="font-holiday text-6xl text-yellow-400 mb-8 mt-8">Safety Resources</h1>
+                <h1 className="font-holiday text-6xl text-yellow-500 mb-8 mt-8">Safety Resources</h1>
 
                 {/* Intro Text */}
                 <p className="text-lg leading-relaxed mb-6 text-gray-600">
@@ -50,11 +50,43 @@ export default function SafetyResources() {
 
                     <div>
                         <p className="text-lg text-yellow-500 font-bold mb-1">
-                            4. Federal Motor Carrier Safety Administration (FMCSA)
+                            4. Federal Motor Carrier Safety Administration (FMCSA) <Link href="https://www.fmcsa.dot.gov" className="italic underline text-gray-600 font-normal hover:text-blue-900 transition-colors" target="_blank">https://www.fmcsa.dot.gov</Link>
                         </p>
-                        <Link href="https://www.fmcsa.dot.gov" className="italic underline text-gray-600 font-normal text-lg hover:text-blue-900 transition-colors block mb-1" target="_blank">https://www.fmcsa.dot.gov</Link>
+                        <p className="text-gray-600 text-lg">Commercial driver safety, Hours of Service regulations, vehicle maintenance standards, and compliance information.</p>
+                    </div>
+
+                    <div>
+                        <p className="text-lg text-yellow-500 font-bold mb-1">
+                            5. National Highway Traffic Safety Administration (NHTSA) <Link href="https://www.nhtsa.gov" className="italic underline text-gray-600 font-normal hover:text-blue-900 transition-colors" target="_blank">https://www.nhtsa.gov</Link>
+                        </p>
+                        <p className="text-gray-600 text-lg">Public road safety education, distracted driving prevention, and vehicle safety initiatives.</p>
                     </div>
                 </div>
+
+                {/* Section 3 */}
+                <h2 className="text-2xl font-bold text-yellow-500 mb-6 font-rubik mt-12">Driver Safety & Education</h2>
+
+                <div className="space-y-6">
+                    <div>
+                        <p className="text-lg text-yellow-500 font-bold mb-1">
+                            6. National Safety Council (NSC) <Link href="https://www.nsc.org" className="italic underline text-gray-600 font-normal hover:text-blue-900 transition-colors" target="_blank">https://www.nsc.org</Link>
+                        </p>
+                        <p className="text-gray-600 text-lg">Defensive driving, fatigue management, workplace safety, and injury prevention resources.</p>
+                    </div>
+
+                    <div>
+                        <p className="text-lg text-yellow-500 font-bold mb-1">
+                            7. CDC – Motor Vehicle Safety <Link href="https://www.cdc.gov" className="italic underline text-gray-600 font-normal hover:text-blue-900 transition-colors" target="_blank">https://www.cdc.gov</Link>
+                        </p>
+                        <p className="text-gray-600 text-lg">Research-based information on driver health, fatigue, and injury prevention.</p>
+                    </div>
+                </div>
+
+                {/* Section 4 */}
+                <h2 className="text-2xl font-bold text-yellow-500 mb-6 font-rubik mt-12">Disclaimer</h2>
+                <p className="text-lg leading-relaxed mb-8 text-gray-600 italic">
+                    External links are provided for informational and educational purposes only. We are not affiliated with or endorsed by any government agency or association unless explicitly stated.
+                </p>
 
             </div>
         </main>

@@ -64,6 +64,10 @@ export default function CompliancePage() {
                             Documented policies, procedures, and audit readiness
                         </li>
                     </ul>
+
+                    <p className="mt-8">
+                        This structure ensures operational alignment with regulatory bodies and contracting partners.
+                    </p>
                 </div>
 
             </div>

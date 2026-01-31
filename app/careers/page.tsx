@@ -30,7 +30,7 @@ export default function Careers() {
 
                     {/* First Name */}
                     <div className="flex flex-col">
-                        <label htmlFor="firstName" className="font-bold text-yellow-400 text-lg mb-2 font-rubik">First Name:</label>
+                        <label htmlFor="firstName" className="font-bold text-yellow-500 text-lg mb-2 font-rubik">First Name:</label>
                         <input
                             type="text"
                             id="firstName"
@@ -41,7 +41,7 @@ export default function Careers() {
 
                     {/* Last Name */}
                     <div className="flex flex-col">
-                        <label htmlFor="lastName" className="font-bold text-yellow-400 text-lg mb-2 font-rubik">Last Name:</label>
+                        <label htmlFor="lastName" className="font-bold text-yellow-500 text-lg mb-2 font-rubik">Last Name:</label>
                         <input
                             type="text"
                             id="lastName"
@@ -52,11 +52,22 @@ export default function Careers() {
 
                     {/* Telephone */}
                     <div className="flex flex-col">
-                        <label htmlFor="telephone" className="font-bold text-yellow-400 text-lg mb-2 font-rubik">Telephone:</label>
+                        <label htmlFor="telephone" className="font-bold text-yellow-500 text-lg mb-2 font-rubik">Telephone:</label>
                         <input
                             type="tel"
                             id="telephone"
                             name="telephone"
+                            className="border border-yellow-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        />
+                    </div>
+
+                    {/* Email Address */}
+                    <div className="flex flex-col">
+                        <label htmlFor="email" className="font-bold text-yellow-500 text-lg mb-2 font-rubik">Email Address:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
                             className="border border-yellow-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                         />
                     </div>
