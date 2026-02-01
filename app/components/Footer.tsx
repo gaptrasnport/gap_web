@@ -76,9 +76,9 @@ export default function Footer() {
 
                     {/* Column 3: Contact & Socials */}
                     <div className="flex flex-col space-y-4 font-rubik">
-                        <div className="font-bold text-lg md:text-xl">
-                            <p className="mb-0">+1 (954) 591-7935</p>
-                            <p>gaptransportation@hotmail.com</p>
+                        <div className="font-bold text-lg md:text-xl flex flex-col items-start">
+                            <a href="tel:+19545917935" className="mb-0 hover:text-yellow-400 transition-colors">+1 (954) 591-7935</a>
+                            <a href="mailto:gaptransportation@hotmail.com" className="hover:text-yellow-400 transition-colors">gaptransportation@hotmail.com</a>
                         </div>
 
                         {/* Social Icons - White Circles with Icons inside */}
@@ -98,7 +98,7 @@ export default function Footer() {
                             </SocialButton>
 
                             {/* Whatsapp */}
-                            <SocialButton href="#">
+                            <SocialButton href="https://wa.me/19545917935">
                                 <svg fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 text-blue-900">
                                     <path d="M.057 24l1.687-6.163c-3.104-5.378-4.414-9.22-4.414-9.22A11.96 11.96 0 0112 0c6.627 0 12 5.373 12 12s-5.373 12-12 12c-3.179 0-6.165-1.243-8.397-3.292L.057 24zM12 2.181a9.818 9.818 0 00-9.823 9.818c0 1.95.539 3.774 1.472 5.352l-1.042 3.804 3.906-1.022a9.782 9.782 0 005.487 1.685 9.818 9.818 0 009.823-9.819 9.818 9.818 0 00-9.823-9.818zm5.548 13.568c-.23.633-1.346 1.156-1.844 1.206-.479.049-1.096.22-3.832-.865-3.328-1.309-5.462-4.733-5.63-4.962-.163-.229-1.346-1.79-1.346-3.414 0-1.625.845-2.427 1.144-2.759.299-.333.666-.415.89-.415.223 0 .445.006.634.006.208 0 .487-.076.757.575.281.674.954 2.333 1.037 2.502.083.17.139.367.026.592-.113.226-.17.367-.333.564-.171.208-.358.463-.51.62-.164.17-.335.353-.146.685.188.333.834 1.374 1.795 2.23 1.238 1.1 2.28 1.442 2.603 1.602.323.159.51.137.7-.08.192-.218.825-.96.953-1.29.13-.333.456-.282.766-.168.32.113 1.996.94 2.338 1.11.342.17.57.253.655.394.084.141.084.819-.146 1.452z" />
                                 </svg>
