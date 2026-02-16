@@ -19,16 +19,24 @@ export default function Footer() {
             ref={footerRef}
             className="relative w-full min-h-screen flex flex-col justify-center text-white font-sans text-sm md:text-base overflow-hidden bg-[#0a192f]"
         >
-            {/* Background Image with Parallax */}
+            {/* Background Video with Parallax */}
             <motion.div
-                className="absolute -top-[15%] -bottom-[15%] -left-0 -right-0 z-0 bg-cover bg-center"
+                className="absolute -top-[15%] -bottom-[15%] -left-0 -right-0 z-0"
                 style={{
-                    backgroundImage: "url('/footer-bg.jpg')",
                     y,
                     scale
                 }}
             >
-                <div className="absolute inset-0 bg-blue-900/60 mix-blend-multiply" />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                >
+                    <source src="/background-extreme.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-blue-900/80" />
             </motion.div>
 
             <div className="relative z-10 container mx-auto px-6 py-16">

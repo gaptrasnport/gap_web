@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import CareersLink from "./CareersLink";
 
 interface NavbarProps {
     transparent?: boolean;
@@ -71,9 +72,7 @@ export default function Navbar({ transparent = false }: NavbarProps) {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/careers" className={getLinkClass("/careers")}>
-                                Careers
-                            </Link>
+                            <CareersLink className={getLinkClass("/careers")} />
                         </li>
                         <li>
                             <Link href="/safety-resources" className={getLinkClass("/safety-resources")}>
@@ -133,13 +132,11 @@ export default function Navbar({ transparent = false }: NavbarProps) {
                                 </Link>
                             </li>
                             <li>
-                                <Link
-                                    href="/careers"
+                                <CareersLink
                                     className={getMobileLinkClass("/careers")}
                                     onClick={handleLinkClick}
-                                >
-                                    Careers
-                                </Link>
+                                    mobile={true}
+                                />
                             </li>
                             <li>
                                 <Link
